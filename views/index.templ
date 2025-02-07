@@ -1,0 +1,21 @@
+package views
+
+import (
+  "fmt"
+  "htmx-test/views/components"
+)
+
+type Todo struct {
+  Id          string
+  Description string
+}
+
+templ Index(todos []*Todo) {
+  <!DOCTYPE html>
+  <html>
+    @components.Head()
+    <body>
+      <h1>Hello world</h1>
+    </body>
+  </html>
+}
